@@ -10,6 +10,8 @@ Gem::Specification.new do |s|
   s.version = '1.0.0'
 
   s.files = s.files = `git ls-files`.split("\n")
+
+  s.add_dependency 'rest-client'
+  s.add_dependency 'addressable'
+  s.add_dependency 'oauth2'
 end
-
-

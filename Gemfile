@@ -1,19 +1,7 @@
 source "http://rubygems.org"
 gemspec
 
-gem 'rake'
-gem 'pry'
-gem 'tilt'
-gem 'rails', '>= 4.0.0'
-gem 'mongoid'
-gem 'mongoid-history'
-gem 'nokogiri'
-gem 'fhir_model', :git => 'https://github.com/fhir-crucible/fhir_dstu2_models', :branch => 'master'
-gem 'rest-client'
-gem 'date_time_precision'
-gem 'bcp47'
-gem 'addressable'
-gem 'oauth2'
+gem 'fhir_model', :git => 'https://github.com/Vermonster/fhir_dstu2_models', :branch => 'master'
 
 group :test do
   gem 'simplecov', :require => false

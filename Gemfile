@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 gemspec
 
-gem 'fhir_model', :git => 'https://github.com/Vermonster/fhir_dstu2_models', :branch => 'master'
+gem 'fhir_models', :git => 'https://github.com/Vermonster/fhir_models', :branch => 'master'
 
 group :test do
   gem 'simplecov', :require => false

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Vermonster/fhir_models
-  revision: f83d0b58826ea0cac7b17069aee82a9274bf6289
+  revision: 043f9a4b6784a459004674ec60af63e85819fa3e
   branch: development
   specs:
     fhir_models (0.3.0)

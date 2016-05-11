@@ -26,15 +26,3 @@ require_relative File.join('.','patch_format.rb')
 require_relative File.join('.','model','bundle.rb')
 require_relative File.join('.','model','client_reply.rb')
 require_relative File.join('.','model','tag.rb')
-
-begin
-  unless FHIR::Boot::Generator.generated?
-    $LOG.debug("regenerating fhir models...")
-    FHIR::Boot::Generator.generate!
-    $LOG.debug("...successfully regenerated fhir models!")
-  else
-    $LOG.debug("skipping regeneration of fhir models")
-  end
-rescue Exception => e 
-	$LOG.error("Could not re-generate fhir models... this can happen in production, but the code does not need to be re-generated")
-end
